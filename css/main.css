@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;900&display=swap');
+* {
+margin: 0px;
+padding: 0px;
+}
+
+body {
+	font-family: 'Overpass', sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 22px;
+	background: #f1f1f1;
+	color:#0f141e;
+}
+
+.container {
+	margin: auto;
+	max-width: 80%;
+	
+}
+.avatar, h1, h4, p, .links,  table, form {
+	margin-left: 30px;
+}
+.img {
+	width: 200px;
+	margin-top: 20px;
+	border-radius: 30px;
+	/* ---------- border-bottom: 6px solid rgba(139, 138, 138, 0.575); ---------- */
+	box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+	
+		}
+h1 {
+	margin-top: 20px;
+	padding-bottom: 10px;
+	
+}
+h4 {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	border-bottom: 2px dashed black;
+	width: 80%;
+	text-align: right;
+	margin-bottom: 30px;
+}
+.card {
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-top: 2px dotted black;
+	border-bottom: 2px solid black;
+	padding-bottom: 20px;
+	padding-top: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.about {
+	display: flex; 
+}
+
+.info {
+background:rgb(249, 245, 250);
+margin-left: 20px;
+}
+.info p {
+ margin-top: 20px;
+ margin-right: 30px;
+ color: rgba(0, 0, 0, 0.5);
+}
+.social {
+		background: rgb(238, 238, 238);
+		height: 230px;
+		/* --------------------------- margin-right: 30px; -------------------------- */
+	}
+	.social a {
+		font-weight: 900;
+		text-decoration: none;
+		color:grey;
+			}
+			a:hover {
+				color:rgb(119, 72, 2);
+				font-size: 1.5em;
+			}
+			a:active {
+				font-weight: 400;
+				color: black;
+			}
+			a:visited {
+				color: rgb(5, 85, 160);
+			}
+
+.hobby {
+	background: rgb(252, 226, 187);
+}
+.hobby ul {
+	margin-left: 60px;
+}
+
+.hobby ul li:hover {
+text-decoration: underline;
+font-weight: 900;
+}
+
+.experience {
+		background: rgb(211, 247, 238);
+}
+.experience table {
+	width: 95%;
+	padding-right: 20px; 
+}
+.experience table thead th {
+	font-weight: 900;
+	font-style: italic;
+	background: rgb(204, 204, 204);
+	padding: 10px;
+}
+
+.experience table tr:nth-child(even) {
+	background: lightgoldenrodyellow;
+}
+
+.experience table tr td {
+	padding: 10px;
+}
+.experience table tr:hover {
+	color: white;
+	background:rgb(64, 170, 117)
+}
+
+.contacts {
+	margin-bottom: 20px;
+	background: rgb(210, 208, 245);
+}
+.form {
+	margin-right: 30px;
+}
+.form h4 {
+	margin-left: 0;
+}
+.form-row {
+margin-bottom: 10px;
+display: flex;
+}
+
+.form-row .form-group {
+	/* ------------------------- display: inline-block; ------------------------- */
+	margin-right: 20px;
+	width: 50%;
+	/* ------------------------- width:  calc(50%-20px); ------------------------ */
+}
+
+.form-row .form-group:last-child {
+margin-right: 0;
+
+}
+.form-group label {
+display: block;
+padding: 10px 10px 10px 0;
+
+}
+.form-group input, .form-group textarea {
+	width: 100%;
+	box-sizing:border-box;
+	border: none;
+	background: transparent;
+	border-bottom: 2px dashed grey;
+	color: black;
+	padding: 15px 0 10px;
+	outline: none;
+	font-family: inherit;
+}
+
+.btn {
+	padding: 15px 20px;
+	border: 4px solid rgb(185, 185, 185);
+	background: #000;
+	color: white;
+	font-weight: 900;
+	transition: 0.5s;
+}
+
+.btn:hover {
+	border: 4px solid black;
+	background:rgb(185, 185, 185);
+	transition: 0.5s;
+}
+
+@media (max-width: 650px) {
+body {
+	font-size: 18px;
+}	
+
+.about {
+	display: block; 
+}
+.avatar {
+	text-align: center;
+}
+h1 {
+	text-align: center;
+	margin-left: 0;;
+}
+h4 {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	border-bottom: 2px dashed black;
+	margin-bottom: 10px;
+	margin-left: 0;
+	width: 100%;
+}
+.experience table thead th {
+	font-size: 14px;
+
+}
+
+
+
+.experience table tr td {
+	font-size: 14px;
+	padding: 5px;
+}
+}
